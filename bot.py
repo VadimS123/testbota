@@ -29,11 +29,5 @@ async def ping(ctx):
  @Bot.command(pass_context=True)
 async def rules(ctx):
     await Bot.say("Правила читать в кнале #Правила")
-
-@Bot.command(pass_context=True)
-async def say(ctx):
-    say_at_me = input("Введите сообщение через консоль: ")
-    await Bot.say(say_at_me)
- 
  
 token = os.environ.get("BOT_TOKEN")
