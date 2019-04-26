@@ -30,6 +30,6 @@ async def ping(ctx):
 async def rules(ctx):
     await Bot.say("Правила читать в кнале #правила")
  
-token = os.environ.get("BOT_TOKEN")
+token = os.environ.get('BOT_TOKEN')
 
 Bot.run(str(token))
