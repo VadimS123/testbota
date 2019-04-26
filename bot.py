@@ -32,4 +32,4 @@ async def rules(ctx):
  
 token = os.environ.get("BOT_TOKEN")
 
-Bot.run(str(token))
+Bot.run("TOKEN")
