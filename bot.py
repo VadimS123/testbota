@@ -28,6 +28,8 @@ async def ping(ctx):
 
  @Bot.command(pass_context=True)
 async def rules(ctx):
-    await Bot.say("Правила читать в кнале #Правила")
+    await Bot.say("Правила читать в кнале #правила")
  
 token = os.environ.get("BOT_TOKEN")
+
+bot.run(str(token))
