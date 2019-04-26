@@ -1,6 +1,6 @@
-import discord
+import discord, asyncio
 from discord.ext import commands
-from discord.ext.commands import Bot
+import os
  
 Bot = commands.Bot(command_prefix='<')
  
@@ -32,4 +32,4 @@ async def rules(ctx):
  
 token = os.environ.get("BOT_TOKEN")
 
-Bot.run("TOKEN")
+Bot.run(str(token))
